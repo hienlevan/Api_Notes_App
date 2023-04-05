@@ -1,4 +1,4 @@
-package com.notesapp.services;
+package com.notesapp.services.user;
 
 import com.notesapp.entities.User;
 

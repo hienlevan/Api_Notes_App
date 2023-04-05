@@ -1,14 +1,14 @@
-package com.notesapp.controller;
+package com.notesapp.controllers;
 
 
 import com.notesapp.entities.User;
-import com.notesapp.services.UserService;
+import com.notesapp.services.user.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/users")
+@RequestMapping("/rest/v1/users")
 public class UserController {
 
     UserService userService;

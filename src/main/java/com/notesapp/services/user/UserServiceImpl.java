@@ -1,8 +1,7 @@
-package com.notesapp.services.impl;
+package com.notesapp.services.user;
 
 import com.notesapp.entities.User;
 import com.notesapp.repositories.UserRepository;
-import com.notesapp.services.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
