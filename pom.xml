@@ -8,11 +8,11 @@
         <version>2.7.10</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.app</groupId>
-    <artifactId>NotesDemo</artifactId>
+    <groupId>com.hlv</groupId>
+    <artifactId>DemoNote</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>NotesDemo</name>
-    <description>NotesDemo</description>
+    <name>DemoNote</name>
+    <description>DemoNote</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
