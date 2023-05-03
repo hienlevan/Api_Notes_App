@@ -1,4 +1,4 @@
-package com.app.model;
+package com.notes_api.enntities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
@@ -12,8 +12,7 @@ public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int noteId;
-
+    private int id;
     private String title;
     private String content;
 
@@ -23,12 +22,12 @@ public class Note {
     @JsonIgnore
     private User user;
 
-    public int getNoteId() {
-        return noteId;
+    public int getId() {
+        return id;
     }
 
-    public void setNoteId(int noteId) {
-        this.noteId = noteId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -58,9 +57,10 @@ public class Note {
     public Note() {
     }
 
-    public Note(int noteId, String title, String content) {
-        this.noteId = noteId;
+    public Note(int id, String title, String content) {
+        this.id = id;
         this.title = title;
         this.content = content;
     }
+
 }
