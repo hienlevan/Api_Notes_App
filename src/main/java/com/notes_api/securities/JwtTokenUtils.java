@@ -54,7 +54,7 @@ public class JwtTokenUtils implements Serializable {
         return doGenerateToken(claims, userDetails.getUsername());
     }
 
-    public TokenDetails getTokenDetails(JwtUserDetails userDetails) {
+    public TokenDetails getTokenDetails(JwtUserDetails userDetails, Object o) {
         TokenDetails tokenDetails = new TokenDetails();
         tokenDetails.setEmail(userDetails.getEmail());
         tokenDetails.setToken(generateToken(userDetails));
